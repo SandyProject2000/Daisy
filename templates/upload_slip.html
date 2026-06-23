@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="scrap-card" style="max-width: 500px; margin: 0 auto;">
+    <h2>Upload Payment Slip</h2>
+    <p>Please send payment to KBZPay: <b>09xxxxxxxxx</b></p>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="slip" required accept="image/*" style="margin-bottom: 20px;">
+        <button type="submit" class="btn-candy">Submit Receipt</button>
+    </form>
+</div>
+{% endblock %}
